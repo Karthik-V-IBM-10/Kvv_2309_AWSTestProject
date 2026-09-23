@@ -12,6 +12,12 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: SIQA_TimeoutTest
+  version: "1.0"
+  gitServerName: kvv_shared
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+- name: DADA_GlobalVariable1
   gitServerName: kvv_shared
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
@@ -20,6 +26,8 @@ services:
 - serviceName: project.kvv_2309_awstest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
   packages:
   - name: Kvv_2309_AWSTestProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQA_TimeoutTest
     version: "1.0"
@@ -31,6 +39,8 @@ services:
   packages:
   - name: Kvv_2309_AWSTestProject
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
@@ -40,6 +50,8 @@ services:
 - serviceName: project.kvv_2309_awstest.integrations:SIQAAdapterFlow
   packages:
   - name: Kvv_2309_AWSTestProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQA_TimeoutTest
     version: "1.0"
