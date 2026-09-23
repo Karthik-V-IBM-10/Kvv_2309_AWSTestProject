@@ -11,10 +11,17 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: SIQA_TimeoutTest
+  gitServerName: kvv_shared
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_2309_awstest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
   packages:
   - name: Kvv_2309_AWSTestProject
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -24,6 +31,8 @@ services:
   packages:
   - name: Kvv_2309_AWSTestProject
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -31,6 +40,8 @@ services:
 - serviceName: project.kvv_2309_awstest.integrations:SIQAAdapterFlow
   packages:
   - name: Kvv_2309_AWSTestProject
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
